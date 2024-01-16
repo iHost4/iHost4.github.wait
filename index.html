@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Beginner Builders</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--the menu on laptops and desktops/ bigger screens-->
+        <header>
+            <div id="brand"><a href="#">Beginner Builders</a></div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.youtube.com">HOME</a></li>
+                    <li><a href="www.facebook.com">PROJECTS</a></li>
+                    <li><a href="www.instagram.com">ABOUT</a></li>
+                    <li><a href="www.indeed.com">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!--this creates a hamburger icon when using on mobile-->
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <!--same ul tags as the initial menu with class on ul-->
+                <ul class="mobile-menu">
+                    <li><a href="https://www.youtube.com">HOME</a></li>
+                    <li><a href="https://www.facebook.com">PROJECTS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--main section-->
+        <main>
+            <section class="sect1">
+                <div class="calltoaction">  
+                    <p>THE BUILDING BEGINS WITH YOU!</p>
+                    <p>1-800-000-000</p>
+                    <p>CALL NOW FOR YOUR REMODEL</p>
+                </div>
+                <img src="images/build.jpg" alt="">
+            </section>
+
+            <!--projects section-->
+            <section class="sect2">
+                <h2>Completed Before and After Projects</h2>
+                <div id="projects">
+                    <img id="mySlides" src="images/beforeafter/ba1.jpg" alt="" onclick="changeImage()">
+                    <!--
+                        <img class="mySlides" src="images/beforeafter/ba2.jpg" alt="">
+                        <img class="mySlides" src="images/beforeafter/ba3.jpg" alt="">
+                        <img class="mySlides" src="images/beforeafter/ba4.jpg" alt="">
+                    -->
+                </div>
+                <!--script for slideshow images-->
+            </section>
+
+            <!--the about section-->
+            <section class="sect3">
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p>
+                        Beginner Builders was founded in 2024 by First Last.
+                        More text goes here about the company and it's founder.
+                        This section has absolutely no limits on what to add.
+                    </p>
+                </div>
+            </section>
+
+            <!--contact section-->
+            <section class="sect4">
+                <h1>CONTACT US TODAY!</h1>
+                <div class="contactus">
+                    <h2>Call:</h2>
+                    <h2>Email:</h2>
+                    <h2>Location:</h2>
+
+                    <h2>1-800-000-000</h2>
+                    <h2>beginnerbuilders@begin.com</h2>
+                    <h2>123 Area Address, Tennessee 30754</h2>
+                </div>
+            </section>
+        </main>
+
+        <!--side bar for social media-->
+        <aside>
+
+        </aside>
+        <footer>
+            &copy;2024 Beginner Builders. Powered by iWillHost4You
+        </footer>
+        <!--JavaScript for mobile menu-->
+        <script src="index.js"></script>
+    </body>
+</html>
