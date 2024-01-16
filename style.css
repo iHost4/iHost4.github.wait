@@ -114,7 +114,8 @@ li a:hover{
         background-color: #2B6CA3;
         text-align: center;
         color: white;
-    }.sect1 img{
+    }
+    .sect1 img{
         width: 100%;
         height: 50vh;
         object-fit: cover;
