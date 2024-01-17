@@ -128,18 +128,25 @@ li a:hover{
     #mySlides{
     width: 100%;
     }
-    #sect2{
-        height: 40vh;
-        background-color: #2B6CA3;
-        text-align: center;
-        color: white;
-    }.sect1 img{
+    .sect1 img{
         width: 100%;
         height: 50vh;
         object-fit: cover;
 
     }
-    
+    #sect2{
+        height: 40vh;
+        background-color: #2B6CA3;
+        text-align: center;
+        color: white;
+    }
+    .sect4 h1{
+        font-size: 40px;
+        color: #5AB7E8;
+    }
+    #contactus{
+        font-size: 12px;
+    }
 }
 /*moreinfo div box*/
 .moreinfo{
@@ -182,6 +189,11 @@ li a:hover{
         height: 75vh;
         object-fit: cover;
     }
+    .sect4 h1{
+        font-size: 50px; 
+        color: #5AB7E8; 
+        text-align: center;
+    }
 }
 /*section2*/
 #mySlides img{
@@ -206,7 +218,7 @@ li a:hover{
     height: 40vh;
     background-color: #2B6CA3;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 /*contactus section*/
 #contactus{
