@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    
+    scroll-behavior:smooth;
+}
 body{
     background-image: url(images/bg.jpg);
 }
@@ -25,9 +29,13 @@ header{
 
 #brand{
     font-size: x-large;
+    margin-top: 10px;
 }
 #brand a{
     color: black;
+}
+nav{
+    margin-top: 10px;
 }
 ul{
     list-style-type: none;
@@ -42,7 +50,7 @@ ul a{
     color: black;
 }
 li a:hover{
-    background-color: red;
+    color: #2B6CA3;
 }
 /*hide and styling the mobile icon*/
 #hamburger-icon{
@@ -54,7 +62,7 @@ li a:hover{
 #hamburger-icon div{
     width: 40px;
     height: 5px;
-    background-color: white;
+    background-color: black;
     margin: 6px 0;
     transition: .5s;
 }
@@ -100,22 +108,21 @@ li a:hover{
     }
     /*ensures the font is not too big on mobile*/
     .calltoaction{
-        font-size: 10vw;
+        font-size: 7vw;
         color: white;
         text-shadow: 20px 5px 12px black;
-        padding: 50px 20px;
+        padding: 100px 20px;
     }
     /*ensures the images width is kept at 100% of the screen width on mobile*/
     #mySlides{
     width: 100%;
     }
-    .sect2{
+    #sect2{
         height: 40vh;
         background-color: #2B6CA3;
         text-align: center;
         color: white;
-    }
-    .sect1 img{
+    }.sect1 img{
         width: 100%;
         height: 50vh;
         object-fit: cover;
@@ -123,9 +130,22 @@ li a:hover{
     }
     
 }
+/*moreinfo div box*/
+.moreinfo{
+    border: 1px solid #2B6CA3;;
+    box-sizing: border-box;
+    background-color: #2B6CA3;;
+    width: max-content;
+    color: yellow;
+    margin-top: 50px;
+    text-align: center;
+    font-size: xxlarge;
+}
+.moreinfo a{
+    text-decoration: none;
+    color: yellow;
+}
 /*section1*/
-
-
 .calltoaction{
     position: absolute;
     
@@ -136,10 +156,10 @@ li a:hover{
         font-size: 40px;
         color: white;
         text-shadow: 20px 5px 12px black;
-        padding: 50px 150px;
+        padding: 100px 150px;
     }
     /*keeps section2 normal on big screen*/
-    .sect2{
+    #sect2{
         height: 80vh;
         background-color: #2B6CA3;
         text-align: center;
@@ -160,8 +180,9 @@ li a:hover{
     cursor: pointer;
 }
 /*section3*/
-.sect3{
-    height: 50vh;
+#sect3{
+    height: 40vh;
+    padding-top: 50px;
     color: white;
     text-align: center;
 }
@@ -171,15 +192,16 @@ li a:hover{
 }
 /*section4*/
 .sect4{
-    height:50vh;
+    height: 40vh;
     background-color: #2B6CA3;
     text-align: center;
     padding-top: 50px;
 }
-.contactus{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/*contactus section*/
+#contactus{
+    color: white;
+    padding-top: 30px;
+    display: grid;
 }
 /*footer*/
 footer{
