@@ -10,13 +10,13 @@
     <body>
         <!--the menu on laptops and desktops/ bigger screens-->
         <header>
-            <div id="brand"><a href="#">Beginner Builders</a></div>
+            <div id="brand"><a href="#">BEGINNER BUILDERS</a></div>
             <nav>
                 <ul>
-                    <li><a href="https://www.youtube.com">HOME</a></li>
-                    <li><a href="www.facebook.com">PROJECTS</a></li>
-                    <li><a href="www.instagram.com">ABOUT</a></li>
-                    <li><a href="www.indeed.com">CONTACT</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#sect2">PROJECTS</a></li>
+                    <li><a href="#sect3">ABOUT</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
                 </ul>
             </nav>
             <!--this creates a hamburger icon when using on mobile-->
@@ -26,10 +26,10 @@
                 <div class="bar3"></div>
                 <!--same ul tags as the initial menu with class on ul-->
                 <ul class="mobile-menu">
-                    <li><a href="https://www.youtube.com">HOME</a></li>
-                    <li><a href="https://www.facebook.com">PROJECTS</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#sect2">PROJECTS</a></li>
+                    <li><a href="#sect3">ABOUT</a></li>
+                    <li><a href="#contactus">CONTACT</a></li>
                 </ul>
             </div>
         </header>
@@ -38,15 +38,18 @@
         <main>
             <section class="sect1">
                 <div class="calltoaction">  
-                    <p>THE BUILDING BEGINS WITH YOU!</p>
+                    <p>THE IDEA BEGINS WITH YOU!</p>
                     <p>1-800-000-000</p>
-                    <p>CALL NOW FOR YOUR REMODEL</p>
+                    <p>CALL NOW</p>
+                    <div class="moreinfo">
+                       <a href="#contactus">LOCATE US!</a> 
+                    </div>
                 </div>
                 <img src="images/build.jpg" alt="">
             </section>
 
             <!--projects section-->
-            <section class="sect2">
+            <section id="sect2">
                 <h2>Completed Before and After Projects</h2>
                 <div id="projects">
                     <img id="mySlides" src="images/beforeafter/ba1.jpg" alt="" onclick="changeImage()">
@@ -60,7 +63,7 @@
             </section>
 
             <!--the about section-->
-            <section class="sect3">
+            <section id="sect3">
                 <div class="about">
                     <h1>About Us</h1>
                     <p>
@@ -73,15 +76,11 @@
 
             <!--contact section-->
             <section class="sect4">
-                <h1>CONTACT US TODAY!</h1>
-                <div class="contactus">
-                    <h2>Call:</h2>
-                    <h2>Email:</h2>
-                    <h2>Location:</h2>
-
-                    <h2>1-800-000-000</h2>
-                    <h2>beginnerbuilders@begin.com</h2>
-                    <h2>123 Area Address, Tennessee 30754</h2>
+                <h1 style="font-size: 50px; color: #5AB7E8; text-align: center;">CONTACT US TODAY!</h1>
+                <div id="contactus">
+                    <h2>Location: 123 Area Address, Tennessee 30754</h2>
+                    <h2>Call: 1-800-000-000</h2>
+                    <h2>Email:beginnerbuilders@begin.com</h2>
                 </div>
             </section>
         </main>
@@ -91,7 +90,7 @@
 
         </aside>
         <footer>
-            &copy;2024 Beginner Builders. Powered by iWillHost4You
+            &copy;2024 Beginner Builders. Powered by iHost4U
         </footer>
         <!--JavaScript for mobile menu-->
         <script src="index.js"></script>
