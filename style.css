@@ -10,6 +10,17 @@ html{
 }
 body{
     background-image: url(images/bg.jpg);
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+/*fade in animation*/
+@keyframes fadeIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 /*edeting the header*/
 header a{
