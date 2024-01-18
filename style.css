@@ -1,82 +1,73 @@
-/**remove any default browser paddings or margins*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html{
-    
-    scroll-behavior:smooth;
-}
-body{
-    background-image: url(images/bg.jpg);
-    animation: fadeIn;
-    animation-duration: 5s;
-}
-/*fade in animation*/
-@keyframes fadeIn{
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
-/*edeting the header*/
-header a{
-    text-decoration: none;
-}
+/*CODES FOR NAVIGATION MENU WITH LOGO*/
 header{
+    box-sizing: border-box;
     position: fixed;
     width: 100%;
     z-index: 1;
 
-    padding: 0 20px;/*this gives a horizontal padding to the right (top right bottom left)*/
-    background-color:yellow;
+    background-color:#FE9399;
     height: 50px;
     display: flex;
     justify-content: space-between;
+    padding-top: .4em;
+    padding-bottom: 1.5em;
 }
-
-#brand{
-    font-size: x-large;
-    margin-top: 10px;
-}
-#brand a{
-    color: black;
-}
-nav{
-    margin-top: 10px;
-}
-ul{
+ul, a{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-ul li{
-    padding: 5px;
-}
-ul a{
+    text-decoration: none;
     color: black;
 }
-li a:hover{
-    color: #2B6CA3;
+ul a:hover{
+    background-color: orange;
 }
-/*hide and styling the mobile icon*/
-#hamburger-icon{
-    margin: auto 0;
-    display: none;
+nav img:hover{
     cursor: pointer;
 }
-/*styles the icon once screen size is met. transition times added*/
-#hamburger-icon div{
-    width: 40px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    transition: .5s;
+/*#brand is the text and logo and .brand-logo is the logo ONLY*/
+#brand{
+    position: relative;
+    display: flex;
+    padding-left: 2em;
+    padding-top: .7em;
 }
+.brand-logo{
+    position: absolute;
+    bottom: -.7em;
+    left: 6.5em;
+}
+/*Coding responsiveness for computers and larger devices*/
+@media screen and (min-width: 601px) {
+    #hamburger-icon{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+        padding-top: .6em;
+    }
+}
+/*Coding responsiveness for mobille devices*/
+.mobile-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    height: calc(100vh - 80px); /*makes the menu be the full size of the screen minus the nav height*/
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
 /*adds the animation to rotate the hamburger menu once clicked (goes from bar to X)*/
 /*.open is a JavaScript call*/
 .open .bar1{
@@ -97,141 +88,64 @@ li a:hover{
     align-items: center;
     justify-content: flex-start;
 }
-.mobile-menu{
-    display: none;
-    position: absolute;
-    top: 50px; /*exact height as the header!*/
-    left: 0;
-    height: calc(100vh - 50px); /*makes the menu be the full size of the screen minus the nav height*/
-    width: 100%;
-
-    background-color: grey;
-}
-/*hide the desktop menu bar on mobile devices (less than 600px)*/
-/*@media tag MUST GO AT THE BOTTOM*/
-@media only screen and (max-width: 700px){
-    header nav{
+@media screen and (max-width: 600px) {
+    nav ul {
         display: none;
     }
-    /*displays the hamburger-icon once the screen is less than desired px*/
+
     #hamburger-icon{
         display: block;
+        margin: auto 0;
+        cursor: pointer;
+        padding-right: 2em;
+        bottom: .6em;
     }
-    /*ensures the font is not too big on mobile*/
-    .calltoaction{
-        font-size: 7vw;
-        color: white;
-        text-shadow: 20px 5px 12px black;
-        padding: 100px 20px;
+    /*styles the icon once screen size is met. transition times added*/
+    #hamburger-icon div{
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: .5s;
     }
-    /*ensures the images width is kept at 100% of the screen width on mobile*/
-    #mySlides{
-    width: 100%;
+    /*I figured out how to not have the cursor at all times on the background*/
+    .mobile-menu{
+        cursor:auto;
     }
-    .sect1 img{
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
+}
+/*END OF CODES FOR NAVIGATION MENU WITH LOGO*/
+/*BEGINNING CODES FOR THE FIRST SECTION*/
 
-    }
-    #sect2{
-        height: 40vh;
-        background-color: #2B6CA3;
-        text-align: center;
-        color: white;
-    }
-    .sect4 h1{
-        font-size: 40px;
-        color: #5AB7E8;
-    }
-    #contactus{
-        font-size: 12px;
-    }
+#sect1 img{
+    width: 100vw;
 }
-/*moreinfo div box*/
-.moreinfo{
-    border: 1px solid #2B6CA3;;
-    box-sizing: border-box;
-    background-color: #2B6CA3;;
-    width: max-content;
-    color: yellow;
-    margin-top: 50px;
-    text-align: center;
-    font-size: xxlarge;
-}
-.moreinfo a{
-    text-decoration: none;
-    color: yellow;
-}
-/*section1*/
-.calltoaction{
+.texts-sect1{
     position: absolute;
-    
-}
-/*makes it so that font is not altered on mobile*/
-@media only screen and (min-width: 701px){
-    .calltoaction{
-        font-size: 40px;
-        color: white;
-        text-shadow: 20px 5px 12px black;
-        padding: 100px 150px;
-    }
-    /*keeps section2 normal on big screen*/
-    #sect2{
-        height: 80vh;
-        background-color: #2B6CA3;
-        text-align: center;
-        color
-        : white;
-    }
-    .sect1 img{
-        width: 100%;
-        height: 75vh;
-        object-fit: cover;
-    }
-    .sect4 h1{
-        font-size: 50px; 
-        color: #5AB7E8; 
-        text-align: center;
-    }
-}
-/*section2*/
-#mySlides img{
-    transition: 2s;
-}
-#mySlides:hover{
-    cursor: pointer;
-}
-/*section3*/
-#sect3{
-    height: 40vh;
-    padding-top: 50px;
     color: white;
-    text-align: center;
+    top: 5em;
+    left: 2em;
+
+    /*the font size*/
+    font-size: 1rem; 
+
 }
-.about h1{
-    font-size: 60px;
-    color: yellow;
-}
-/*section4*/
-.sect4{
-    height: 40vh;
-    background-color: #2B6CA3;
-    text-align: center;
-    padding-top: 40px;
-}
-/*contactus section*/
-#contactus{
-    color: white;
-    padding-top: 30px;
-    display: grid;
-}
-/*footer*/
-footer{
-    background-color: white;
+/*END OF CODES FOR THE FIRST SECTION*/
+/*BEGINNING CODES FOR THE SECOND SECTION*/
+#sect2{
     position: relative;
-    height: 50px;
-    bottom: 0;
-    text-align: center;
-    padding-top: 20px;
+    height: 100vh;
+    background-color: #AC1CB0;
+}
+.services-container{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.service1{
+    border: 1px solid blueviolet;
+    width: 70vw;
+    padding: 30px;
+    margin: 5px;
 }

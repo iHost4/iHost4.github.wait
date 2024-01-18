@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Beginner Builders</title>
+        <title>iHost4U</title>
+        <!--add a favicon for browser logo-->
+        <link rel="icon" href="images/ig.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <!--script for the mobile menu interaction-->
+        <script src="mobile.js"></script>
     </head>
 
     <body>
-        <!--the menu on laptops and desktops/ bigger screens-->
+        <!--START OF HEADER WITH NAVIGATION MENU-->
         <header>
-            <div id="brand"><a href="#">BEGINNER BUILDERS</a></div>
             <nav>
+                <div id="brand"><a href="#">iHost4Uz</a>
+                    <div class="brand-logo"><img src="images/ig.png" alt="" style="width: 2em;"></div>
+                </div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#sect2">PROJECTS</a></li>
-                    <li><a href="#sect3">ABOUT</a></li>
-                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="">| HOME |</a></li>
+                    <li><a href="">SERVICES |</a></li>
+                    <li><a href="">PROJECTS |</a></li>
+                    <li><a href="">ABOUT |</a></li>
+                    <li><a href="">CONTACT |</a></li>
                 </ul>
             </nav>
-            <!--this creates a hamburger icon when using on mobile-->
+            <!--mobile heading-->
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -27,72 +34,68 @@
                 <!--same ul tags as the initial menu with class on ul-->
                 <ul class="mobile-menu">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#sect2">PROJECTS</a></li>
-                    <li><a href="#sect3">ABOUT</a></li>
-                    <li><a href="#contactus">CONTACT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
         </header>
-
-        <!--main section-->
+        <!--END OF HEADER WITH NAVIGATION MENU-->
         <main>
-            <section class="sect1">
-                <div class="calltoaction">  
-                    <p>THE IDEA BEGINS WITH YOU!</p>
-                    <p>1-800-000-000</p>
-                    <p>CALL NOW</p>
-                    <div class="moreinfo">
-                       <a href="#contactus">LOCATE US!</a> 
+            <!--START OF SECTION 1-->
+            <div id="sect1">
+                <div class="texts-sect1">
+                    <h1>FOCUS ON YOUR BUSINESS AND I WILL HOST 4 YOU!</h1>
+                    <p>We take the hassle and worry out of web designing.</p>
+                    <p>As a business owner we know how much work goes into it.</p>
+                    <p>You are the manager, worker, and finance advisor.</p>
+                    <h2>LET US TAKE THE LOAD OFF!</h2>
+                </div>
+
+                <img src="images/macbook.jpg" alt="">
+            </div>
+            <!--END OF SECTION 1-->
+            <div id="sect2">
+                <div class="services-container">
+                    <div class="service1">
+                        <h2>WEBSITE CREATION</h2>
+                        <p>
+                            We will build you a personalized webiste your way.
+                            Any style you desire at a low cost. <br>
+                            We will build you a personalized webiste your way.
+                            Any style you desire at a low cost <br>
+                            We will build you a personalized webiste your way.
+                            Any style you desire at a low cost
+                        </p>
+                    </div>
+
+                    <div class="service1">
+                        <h2>WEBSITE HOSTING</h2>
+                        <p>
+                            We will host your website for you.
+                            You will be able to have access to real time data. <br>
+                            We will host your website for you.
+                            You will be able to have access to real time data. <br>
+                            We will host your website for you.
+                            You will be able to have access to real time data.
+                        </p>
+                    </div>
+
+                    <div class="service1">
+                        <h2>BRAND IDEAS</h2>
+                        <p>
+                            We know a thing or two about having an attractive brand.
+                            Let us help formulate some ideas for you. <br>
+                            We know a thing or two about having an attractive brand.
+                            Let us help formulate some ideas for you. <br>
+                            We know a thing or two about having an attractive brand.
+                            Let us help formulate some ideas for you.
+                        </p>
                     </div>
                 </div>
-                <img src="images/build.jpg" alt="">
-            </section>
-
-            <!--projects section-->
-            <section id="sect2">
-                <h2>Completed Before and After Projects</h2>
-                <div id="projects">
-                    <img id="mySlides" src="images/beforeafter/ba1.jpg" alt="" onclick="changeImage()">
-                    <!--
-                        <img class="mySlides" src="images/beforeafter/ba2.jpg" alt="">
-                        <img class="mySlides" src="images/beforeafter/ba3.jpg" alt="">
-                        <img class="mySlides" src="images/beforeafter/ba4.jpg" alt="">
-                    -->
-                </div>
-                <!--script for slideshow images-->
-            </section>
-
-            <!--the about section-->
-            <section id="sect3">
-                <div class="about">
-                    <h1>About Us</h1>
-                    <p>
-                        Beginner Builders was founded in 2024 by First Last.
-                        More text goes here about the company and it's founder.
-                        This section has absolutely no limits on what to add.
-                    </p>
-                </div>
-            </section>
-
-            <!--contact section-->
-            <section class="sect4">
-                <h1 style="font-size: 50px; color: #5AB7E8; text-align: center;">CONTACT US TODAY!</h1>
-                <div id="contactus">
-                    <h2>Location: 123 Area Address, Tennessee 30754</h2>
-                    <h2>Call: 1-800-000-000</h2>
-                    <h2>Email:beginnerbuilders@begin.com</h2>
-                </div>
-            </section>
+            </div>
+            <!--END OF SECTION 1-->
         </main>
-
-        <!--side bar for social media-->
-        <aside>
-
-        </aside>
-        <footer>
-            &copy;2024 Beginner Builders. Powered by iHost4U
-        </footer>
-        <!--JavaScript for mobile menu-->
-        <script src="index.js"></script>
     </body>
 </html>
