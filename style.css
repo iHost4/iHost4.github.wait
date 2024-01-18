@@ -57,6 +57,9 @@ nav img:hover{
         display: flex;
         padding-top: .6em;
     }
+    .texts-sect1{
+        font-size: 1rem;/**/
+    }
 }
 /*Coding responsiveness for mobille devices*/
 .mobile-menu{
@@ -67,7 +70,6 @@ nav img:hover{
     width: 100%;
     background-color: rgba(128, 128, 128, 0.404);
 }
-
 /*adds the animation to rotate the hamburger menu once clicked (goes from bar to X)*/
 /*.open is a JavaScript call*/
 .open .bar1{
@@ -92,7 +94,6 @@ nav img:hover{
     nav ul {
         display: none;
     }
-
     #hamburger-icon{
         display: block;
         margin: auto 0;
@@ -112,6 +113,9 @@ nav img:hover{
     .mobile-menu{
         cursor:auto;
     }
+    .texts-sect1{
+        font-size: .625rem;/**/
+    }
 }
 /*END OF CODES FOR NAVIGATION MENU WITH LOGO*/
 /*BEGINNING CODES FOR THE FIRST SECTION*/
@@ -124,10 +128,6 @@ nav img:hover{
     color: white;
     top: 5em;
     left: 2em;
-
-    /*the font size*/
-    font-size: 1rem; 
-
 }
 /*END OF CODES FOR THE FIRST SECTION*/
 /*BEGINNING CODES FOR THE SECOND SECTION*/
@@ -141,11 +141,11 @@ nav img:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: .625em;
 }
 .service1{
     border: 1px solid blueviolet;
-    width: 70vw;
+    width: 70em;/*changed from 70vh*/
     padding: 30px;
     margin: 5px;
 }
