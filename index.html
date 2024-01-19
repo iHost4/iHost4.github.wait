@@ -15,7 +15,7 @@
         <!--START OF HEADER WITH NAVIGATION MENU-->
         <header>
             <nav>
-                <div id="brand"><a href="#">iHost4Uz</a>
+                <div id="brand"><a href="#">iHost4U</a>
                     <div class="brand-logo"><img src="images/ig.png" alt="" style="width: 2em;"></div>
                 </div>
                 <ul>
@@ -46,20 +46,25 @@
             <!--START OF SECTION 1-->
             <div id="sect1">
                 <div class="texts-sect1">
-                    <h1>FOCUS ON YOUR BUSINESS AND I WILL HOST 4 YOU!</h1>
+                    <h2>FOCUS ON YOUR BUSINESS AND I WILL HOST 4 YOU!</h2>
                     <p>We take the hassle and worry out of web designing.</p>
                     <p>As a business owner we know how much work goes into it.</p>
                     <p>You are the manager, worker, and finance advisor.</p>
                     <h2>LET US TAKE THE LOAD OFF!</h2>
+                    <a href="">
+                        <div class="start-now">START NOW</div>
+                    </a>
                 </div>
 
                 <img src="images/macbook.jpg" alt="">
             </div>
             <!--END OF SECTION 1-->
+            <!--START OF SECTION 2-->
             <div id="sect2">
                 <div class="services-container">
                     <div class="service1">
                         <h2>WEBSITE CREATION</h2>
+                        <hr>
                         <p>
                             We will build you a personalized webiste your way.
                             Any style you desire at a low cost. <br>
@@ -72,8 +77,8 @@
 
                     <div class="service1">
                         <h2>WEBSITE HOSTING</h2>
-                        <p>
-                            We will host your website for you.
+                        <hr>
+                        <p>We will host your website for you.
                             You will be able to have access to real time data. <br>
                             We will host your website for you.
                             You will be able to have access to real time data. <br>
@@ -84,6 +89,7 @@
 
                     <div class="service1">
                         <h2>BRAND IDEAS</h2>
+                        <hr>
                         <p>
                             We know a thing or two about having an attractive brand.
                             Let us help formulate some ideas for you. <br>
@@ -95,7 +101,34 @@
                     </div>
                 </div>
             </div>
-            <!--END OF SECTION 1-->
+            <!--END OF SECTION 2-->
+            <!--START OF SECTION 3-->
+            <div id="sect3">
+                <div class= "slide-container">
+                    <h1>LATEST PROJECTS</h1> 
+                    <img src="images/slides/s1.jpg" alt="" id="bannerImg"> 
+                    <div class="slide-buttons">
+                        <input type="button" onclick="changeImg('images/slides/s1.jpg')" class="s-button">
+                        <input type="button" onclick="changeImg('images/slides/s2.jpg')" class="s-button">
+                        <input type="button" onclick="changeImg('images/slides/s3.jpg')" class="s-button">
+                        <input type="button" onclick="changeImg('images/slides/s4.jpg')" class="s-button">                       
+                    </div>
+                </div>
+            </div>
+            <!--script for changinimages-->
+            <script>
+                function changeImg(fileName){
+                    let img = document.querySelector("#bannerImg");
+                    img.setAttribute("src", fileName);
+                }
+            </script>
+            <!--END OF SECTION 3-->
         </main>
+
+        <footer>
+            &copy; 2024 iHost4U 
+            <br>
+            ALL RIGHTS RESERVED
+        </footer>
     </body>
 </html>
