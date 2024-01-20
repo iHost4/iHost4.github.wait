@@ -19,4 +19,4 @@ About - subheading and description of the site or company
 
 Contact (this can be a separate page if needed with the About) - create a mailing box
 
-Footer - company copyright tag and "Powered by iHost4U"
+Footer - company copyright tag and "Powered by iHost4U "
