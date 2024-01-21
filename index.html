@@ -6,17 +6,24 @@
         <link rel="icon" href="images/ig.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <!--script for the mobile menu interaction-->
         <script src="mobile.js"></script>
+        <!--START of links and script for carousel bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css"> <!--put this after bootstrap to make my style presedent -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--END of links and script for carousel bootstrap-->
     </head>
 
     <body>
         <!--START OF HEADER WITH NAVIGATION MENU-->
         <header>
             <nav>
-                <div id="brand"><a href="#">iHost4U</a>
-                    <div class="brand-logo"><img src="images/ig.png" alt="" style="width: 2em;"></div>
+                <div id="brand">
+                    <a href="#">iHost4U
+                        <div class="brand-logo"><img href = "#" src="images/ig.png" alt="" style="width: 2em;"></div>
+                    </a>
                 </div>
                 <ul>
                     <li><a href="#sect1">| HOME |</a></li>
@@ -47,13 +54,11 @@
             <div id="sect1">
                 <div class="texts-sect1">
                     <h2>FOCUS ON YOUR BUSINESS AND I WILL HOST 4 YOU!</h2>
-                    <p>We take the hassle and worry out of web designing.</p>
-                    <p>As a business owner we know how much work goes into it.</p>
-                    <p>You are the manager, worker, and finance advisor.</p>
-                    <h2>LET US TAKE THE LOAD OFF!</h2>
-                    <a href="#">
-                        <div class="start-now">START NOW</div>
-                    </a>
+                    <h3>
+                        We take the hassle and worry out of web designing. <br>
+                        As a business owner we know how much work goes into it.
+                    </h3>
+                    <a class="start-now" href="#sect3">START NOW</a>
                 </div>
 
                 <img src="images/macbook.jpg" alt="">
@@ -104,25 +109,50 @@
             <!--END OF SECTION 2-->
             <!--START OF SECTION 3-->
             <div id="sect3">
-                <div class= "slide-container">
-                    <h1>LATEST PROJECTS</h1> 
-                    <img src="images/slides/s1.jpg" alt="" id="bannerImg"> 
-                    <div class="slide-buttons">
-                        <input type="button" onclick="changeImg('images/slides/s1.jpg')" class="s-button">
-                        <input type="button" onclick="changeImg('images/slides/s2.jpg')" class="s-button">
-                        <input type="button" onclick="changeImg('images/slides/s3.jpg')" class="s-button">
-                        <input type="button" onclick="changeImg('images/slides/s4.jpg')" class="s-button">                       
+                <!--START OF BOOTSTRAP CAROUSEL-->
+                <div class="container">
+                    <h2 style="text-align: center;">PROJECTS</h2>  
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators" >
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/slides/s1.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+                  
+                        <div class="item">
+                          <img src="images/slides/s2.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="images/slides/s3.jpg" alt="New york" style="width:100%;">
+                        </div>
+                        
+                        <div class="item">
+                            <img src="images/slides/s4.jpg" alt="New york" style="width:100%;">
+                          </div>
+                      </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
-                </div>
+                  </div>
+                <!--END OF BOOTSTRAP CAROUSEL-->
             </div>
-        
-            <!--script for changinimages-->
-            <script>
-                function changeImg(fileName){
-                    let img = document.querySelector("#bannerImg");
-                    img.setAttribute("src", fileName);
-                }
-            </script>
             <!--END OF SECTION 3-->
         </main>
 
