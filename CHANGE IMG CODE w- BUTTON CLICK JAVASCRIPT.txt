@@ -1,0 +1,83 @@
+JAVA SCRIPT SLIDE SHOW
+
+HTML:
+
+<div class= "slide-container">
+      <h1>LATEST PROJECTS</h1> 
+      <img src="images/slides/s1.jpg" alt="" id="bannerImg"> 
+      <div class="slide-buttons">
+             <input type="button" onclick="changeImg('images/slides/s1.jpg')" class="s-button">
+             <input type="button" onclick="changeImg('images/slides/s2.jpg')" class="s-button">
+             <input type="button" onclick="changeImg('images/slides/s3.jpg')" class="s-button">
+             <input type="button" onclick="changeImg('images/slides/s4.jpg')" class="s-button">                       
+      </div>
+</div>
+        
+JAVASCRIPT:
+
+<!--script for changinG images-->
+<script>
+        function changeImg(fileName){
+             let img = document.querySelector("#bannerImg");
+             img.setAttribute("src", fileName);
+        }
+</script>
+
+CSS:
+
+/*this would go under @media screen and (min-width: 601px) for larger devices*/
+    .slide-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /*center the image and buttons*/
+    #sect3 img{
+        display: block;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .slide-buttons{
+        position: static;
+        left: 10em;
+    }
+    .s-button{
+        width: 1.5em;
+        background-color: blueviolet;
+        border-radius: .7em;
+    }
+    .s-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+/*this would go under @media screen and (max-width: 600px) for smaller devices*/
+    .slide-container{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    /*center the image and buttons*/
+    #sect3 img{
+        display: block;
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slide-buttons{
+        position: static;
+        left: 10em;
+    }
+    .s-button{
+        width: 1.5em;
+        background-color: rgba(137, 43, 226, 0.61);
+        border-radius: .7em;
+    }
+    .s-button:hover{
+        cursor: pointer;
+        background-color: red;
+        animation: 5s;
+    }

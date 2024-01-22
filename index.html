@@ -14,9 +14,34 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <!--END of links and script for carousel bootstrap-->
+        <!--START of email input-->
+        <script src="email.js"></script>
+        <!--END of email input-->
     </head>
 
     <body>
+        <!--POP UP BOX-->
+        <div>
+            <form name="submit-to-google-sheet" action="/action_page.php" id="myPopUp" >
+                <div id="pop-up"onload="setTimeout(myPopUp,5000)">
+                    <h3>
+                        WE HAVE A SPECIAL DISCOUNT GOING ON NOW! <br>
+                        50% OFF ADANCE STYLED WEB PACKAGES
+                    </h3>
+                    <div class="required"> 
+                        <input type="email" name="email" id="emailAddress" placeholder="Enter your email" required><br><br>
+                        <button type="submit" class="take-action">TAKE ACTION</button>  <br><br>
+                    </div>
+                    <button type="button" class="decline-deal" onclick="denyMe()">DECLINE</button>
+            </div>
+            </form>
+        </div>
+
+        <script>
+            function denyMe(){
+                document.getElementById("myPopUp").style.display = "none";
+            }
+        </script>
         <!--START OF HEADER WITH NAVIGATION MENU-->
         <header>
             <nav>
@@ -25,12 +50,13 @@
                         <div class="brand-logo"><img href = "#" src="images/ig.png" alt="" style="width: 2em;"></div>
                     </a>
                 </div>
-                <ul>
-                    <li><a href="#sect1">| HOME |</a></li>
-                    <li><a href="#sect2">SERVICES |</a></li>
-                    <li><a href="#sect3">PROJECTS |</a></li>
-                    <li><a href="">ABOUT |</a></li>
-                    <li><a href="">CONTACT |</a></li>
+                <ul style="padding-right: 20px;">
+                    <li><a href="#sect1">HOME</a>|</li>
+                    <li><a href="#sect2">SERVICES</a>|</li>
+                    <li><a href="#sect3">PROJECTS</a>|</li>
+                    <li><a href="">ABOUT</a>|</li>
+                    <li><a href="">PACKAGES</a>|</li>
+                    <li><a href="">CONTACT</a></li><!--goes to a different page-->
                 </ul>
             </nav>
             <!--mobile heading-->
@@ -44,7 +70,8 @@
                     <li><a href="#sect2">SERVICES</a></li>
                     <li><a href="#sect3">PROJECTS</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="">PACKAGES</a></li>
+                    <li><a href="#">CONTACT</a></li><!--goes to different page-->
                 </ul>
             </div>
         </header>
@@ -59,13 +86,14 @@
                         As a business owner we know how much work goes into it.
                     </h3>
                     <a class="start-now" href="#sect3">START NOW</a>
-                </div>
 
+                </div>
                 <img src="images/macbook.jpg" alt="">
             </div>
             <!--END OF SECTION 1-->
             <!--START OF SECTION 2-->
             <div id="sect2">
+                <h1>SERVICES</h1>
                 <div class="services-container">
                     <div class="service1">
                         <h2>WEBSITE CREATION</h2>
@@ -111,7 +139,7 @@
             <div id="sect3">
                 <!--START OF BOOTSTRAP CAROUSEL-->
                 <div class="container">
-                    <h2 style="text-align: center;">PROJECTS</h2>  
+                    <h1 style="text-align: center;">PROJECTS</h1>  
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators" >
@@ -154,6 +182,40 @@
                 <!--END OF BOOTSTRAP CAROUSEL-->
             </div>
             <!--END OF SECTION 3-->
+            <!--START OF SECTION 4-->
+            <div id="sect2">
+                <h1>SERVICES</h1>
+                <div class="services-container">
+                    <div class="service1">
+                        <h2>JUST BASIC WEB</h2>
+                        <h4>Webiste creation only</h4>
+                        <hr>
+                        <p>
+                            This package comes with the least services.
+                        </p>
+                    </div>
+
+                    <div class="service1">
+                        <h2>ADVANCE STYLED WEB</h2>
+                        <h4>Website creation with more features</h4>
+                        <hr>
+                        <p>
+                            This is our idea package for companies that offer more services <br>
+                            and want more than one pag
+                        </p>
+                    </div>
+
+                    <div class="service1">
+                        <h2>WEB AND HOST</h2>
+                        <h4>Our poowrhouse deal</h4>
+                        <hr>
+                        <p>
+                            This package is for those who want an advanced website and get it hosted
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--END OF SECTION 4-->
         </main>
 
         <footer>
