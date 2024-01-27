@@ -12,17 +12,17 @@ header{
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 
     background-color:#CF0233;
     height: 50px;
     display: flex;
     justify-content: space-between;
+    padding-right: 20px;
     padding-top: .4em;
     padding-bottom: 1.5em;
 }
 header ul{
-    
     font-weight: bold;
 }
 ul, a{
@@ -31,11 +31,13 @@ ul, a{
     color: white;
 }
 ul a:hover{
-    color: #FDA695;
-    text-decoration: none;
+    color: black;
 }
 nav img:hover{
     cursor: pointer;
+}
+nav li{
+    padding-right: 15px;
 }
 /*#brand is the text and logo and .brand-logo is the logo ONLY*/
 #brand{
@@ -159,19 +161,9 @@ nav img:hover{
     }
     /*END OF CODES FOR THE FIRST SECTION*/
     /*BEGINNING CODES FOR THE SECOND SECTION*/
-
-    /* accidentally discovered that not having sect2 allows for more responsiveness of the service box
-    simply remove the styling of #sect2... maybe the position was the issue?
-    #sect2{
-        position: static;
-        height: 30vw
-        background-color: #AC1CB0;
-        box-sizing: border-box;
-    }
-    */
     #sect2{
         background-color: white;
-        margin-top: -20px;
+        margin-top: 20px;
         text-align: center;
     }
     .services-container{
@@ -191,18 +183,21 @@ nav img:hover{
         margin: 5px;
         box-sizing: border-box;
     }
-    .service1 hr{
-        margin-top: .2em;
-        margin-bottom: .5em;
+    /*END OF CODES FOR THE SECOND SECTION*/
+    /*BEGINNING CODES FOR THE THIRD SECTION*/
+    #sect3{
+        background-color: black;
         color: white;
+        padding-bottom: 50px;
     }
-    /*START Section 4*/
+    /*END OF CODES FOR THE THIRD SECTION*/
+    /*BEGINNING CODES FOR THE FOURTH SECTION*/
     #sect4 h1{
         text-align: center;
     }
     .pricing-container{
         display: grid;
-        grid-template-columns: 33% 33% 33.33%;
+        grid-template-columns: 33% 33.33% 33%;
         margin-top: 80px;
     }
     .prices1{
@@ -219,15 +214,13 @@ nav img:hover{
         background-color: green;
         border-radius: 20px;
         margin: 1.5px;
-        margin-top: -40px;
+        margin-top: -35px;
     }
     .recommended h5{
         font-size: small; 
         font-weight: bold; 
         color: white; 
         text-align: center; 
-        border: 1px solid green; 
-        background-color: green;
     }
     .prices2{
         border: 1px solid rgb(0, 217, 255);
@@ -236,22 +229,27 @@ nav img:hover{
         margin: 1.5px;
         padding-bottom: 165px;
     }
-    /*END section 4*/
-    /*END OF CODES FOR THE SECOND SECTION*/
-    /*BEGINNING CODES FOR THE THIRD SECTION*/
-
-    
-    #sect3{
+    /*END OF CODES FOR THE FOURTH SECTION*/
+    /*BEGINNING CODES FOR THE FIFTH SECTION*/
+    #sect5{
+        padding: 20px;
+        padding-top: 20px;
         background-color: black;
         color: white;
-        padding-bottom: 50px;
+        text-align: center;
+        padding-bottom: 80px;
+        clear: both;
     }
+    #sect5 p{
+        text-align: left;
+        text-indent: 15px;
+    }
+    /*END OF CODESF FOR THE FIFTH SECTION*/
     footer{
         border: 1px solid black;
         color: white;
         background-color: #CF0233;
         padding: 2em;
-        margin-top: 2em;
         text-align: center;
     }
 }
@@ -342,7 +340,7 @@ nav img:hover{
         background-color: blueviolet;
         color: black;
     }
-    /*START Section 4*/
+    /*BEGINNING CODES FOR SECTION FOUR*/
     #sect4{
         background-color: white;
         margin-top: 20px;
@@ -351,14 +349,18 @@ nav img:hover{
     }
     .pricing-container{
         display: grid;
-        grid-template-columns: 33% 33% 33.33%;
+        grid-template-columns: 33% 33.33% 33%;
         margin-top: 80px;
+        font-size: large;
     }
     .prices1{
         border: 1px solid rgb(0, 217, 255);
         background-color: rgb(0, 217, 255);
         border-radius: 20px;
         margin: 2px;
+    }
+    .pricing-container p{
+        text-align: left;
     }
     .prices1 form{
         margin: auto;
@@ -368,7 +370,7 @@ nav img:hover{
         background-color: green;
         border-radius: 20px;
         margin: 1.5px;
-        margin-top: -40px;
+        margin-top: -35px;
     }
     .recommended h5{
         font-size: small; 
@@ -385,18 +387,9 @@ nav img:hover{
         margin: 1.5px;
         padding-bottom: 165px;
     }
+    /*END OF CODES FOR SECTION FOUR*/
     /*END OF CODES FOR THE FIRST SECTION*/
     /*BEGINNING CODES FOR THE SECOND SECTION*/
-    
-    /* accidentally discovered that not having sect2 allows for more responsiveness of the service box
-    simply remove the styling of #sect2... maybe the position was the issue?
-    #sect2{
-        position: static;
-        height: 30vw
-        background-color: #AC1CB0;
-        box-sizing: border-box;
-    }
-    */
     #sect2{
         background-color: white;
         margin-top: 20px;
@@ -426,20 +419,28 @@ nav img:hover{
         margin-bottom: .5em;
         color: white;
     }
+    /*END OF CODES FOR THE SECOND SECTION*/
+    /*BEGINNING CODES FOR THE THIRD SECTION*/
     #sect3{
         background-color: black;
         color: white;
         padding-bottom: 50px;
     }
-    /*END OF CODES FOR THE SECOND SECTION*/
-    /*BEGINNING CODES FOR THE THIRD SECTION*/
-
-    /**
-    #sect3{
-        height: 100vh;
-        background-color: red;
+    /*BEGINNING CODES FOR THE FIFTH SECTION*/
+    #sect5{
+        padding: 20px;
+        padding-top: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-bottom: 80px;
+        clear: both;
     }
-    **/
+    #sect5 p{
+        text-align: left;
+        text-indent: 15px;
+    }
+    /*END OF CODESF FOR THE FIFTH SECTION*/
     /*BEGINNING CODE FOR FOOTER*/
     footer{
         border: 1px solid black;
